@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css" />
+    <style>
+
+    </style>
+    <title>Biografía</title>
+</head>
+<!-- Mantener mismo Header y Nav -->
+
+<body>
+    <div class="container">
+        <header class="title-center">
+            <H1>FULL STACK DEVELOPER</H1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="/html/index.html"><button class="button-nav">HOME |</button></li></a>
+                <li><a href="/html/biografia.html"><button class="button-nav">BIOGRAFÍA |</button></li></a>
+                <li><a href="/html/portfolio.html"><button class="button-nav">PORTAFOLIO |</button></li>
+                </a>
+                <li><a href="/html/contacto.html"><button class="button-nav">CONTACTO |</button></li></a>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <!-- HTML -->
+                <article>
+                    <h2 id="titulo">1. HTML</h2>
+                    <figure>
+                        <img class="icon-title"
+                            src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/9512126/image/97aa4811d22871bc1af321f001601022">
+                    </figure>
+                    <p>
+                        <span class="bolt">HTML</span>
+                        <em>
+                            <small>(Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language)
+                            </small>
+                        </em> es el componente más básico de la Web. Define el significado y la estructura del contenido
+                        web. Además de HTML, generalmente se utilizan otras tecnologías para describir la
+                        apariencia/presentación de una página web <span class="bolt">(CSS)</span> o la
+                        funcionalidad/comportamiento
+                        <span class="bolt">(JavaScript)</span>."Hipertexto" hace referencia a los enlaces que conectan
+                        páginas web
+                        entre
+                        sí, ya sea dentro
+                        de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al
+                        subir
+                        contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un
+                        participante activo en la <em>«World Wide Web»</em> (Red Informática Mundial).
+                    </p>
+
+                    <figure id="imgtags">
+                        <img src="https://tecnominik1819.files.wordpress.com/2019/03/etiquetas-html-1.jpg?w=1100">
+                        <figcaption>Varios ejemplos de etiquetas de HTML</figcaption>
+                    </figure>
+                    <div class="lines"></div>
+                    <h2>1.1 Listas </h2>
+                    <p>Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una
+                        página,
+                        todos
+                        los cuales irán precedidos, generalmente, por un guión o número. Los tipos de listas en HTML son
+                        los
+                        siguientes: </p>
+
+                    <!-- Añadir < en texto es &lt y > &gt; -->
+
+                    <h3> 1. Listas Ordenadas: </h3>
+                    <p>Las listas ordenadas van enmarcadas dentro de las etiquetas &lt; ol > &lt; /ol >. Cada
+                        punto de la lista se escribe con la misma etiqueta que en las no numeradas: &lt;li &gt;. Pero al
+                        ser listas ordenadas los símbolos serán números y éstos se irán generando automáticamente por
+                        orden.</p>
+                    <div class="ej">
+                        <div>
+                            <em> Ejemplo: </em>
+                            <dl>
+                                <dt> &lt; ol >
+                                <dd> &lt; li > Pepino &lt; /li></dd>
+                                <dd> &lt; li > Lechuga &lt; /li></dd>
+                                <dd> &lt; li > Cebolla &lt; /li></dd>
+                                </dt>
+                                &lt; /ol >
+                            </dl>
+                        </div>
+                        <div>
+                            <em>Resultado:</em>
+                            <br>
+                            <ol>
+                                <li> Pepino </li>
+                                <li>Lechuga </li>
+                                <li>Cebolla </li>
+                            </ol>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="lines"></div>
+                    <h3> 2. Listas desordenadas </h3>
+                    <p>Las listas no ordenadas van dentro de la etiqueta
+                        &lt;ul> HTML y de su cierre &lt;/ul>. Cada punto que queramos añadir a la lista, lo haremos
+                        dentro
+                        de la
+                        etiqueta &lt;li> y su cierre. Si no le indicamos nada a la etiqueta &lt;li> HTML, ésta se
+                        generará
+                        de
+                        forma automática. Pero si queremos definir nosotros mismo el símbolo del punto, podemos gracias
+                        al
+                        atributo “type”.</p>
+                    <div class="ej">
+                        <div>
+                            <em> Ejemplo: </em>
+                            <dl>
+                                <dt> &lt; ul >
+                                <dd> &lt; li > Pepino &lt;/li></dd>
+                                <dd> &lt; li > Lechuga &lt;/li></dd>
+                                <dd> &lt; li > Cebolla &lt;/li></dd>
+                                </dt>
+                                &lt; /ul >
+                            </dl>
+                        </div>
+                        <div>
+                            <em>Resultado:</em>
+                            <ul class="list-disorder">
+                                <li>Pepino </li>
+                                <li>Lechuga </li>
+                                <li>Cebolla </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lines"></div>
+                    <h3> 3. Lista de definiciones </h3>
+                    <p>Si lo que vamos a hacer es un listado de definiciones, podemos usar las etiquetas &lt;dl>,
+                        &lt;dt> y
+                        &lt;dd>. Vamos a explicarlas por partes:
+                        La etiqueta &lt;dl> viene de los términos ingleses “Definiton list” y nos indica que dentro
+                        de ella, entre ella y su cierre, va a ir una definición. La etiqueta &lt;dt> viene de los
+                        términos “Definition term” y dentro de ella irá el término que vamos a definir. Para entendernos
+                        mejor, dentro de &lt;dt> iría el título de la definición. </p>
+
+                    <div class="ej">
+                        <div>
+                            <em> Ejemplo: </em>
+                            <dl>
+                                <dt> &lt; dl >
+                                <dt> &lt; dt > Pepino &lt;/dt></dt>
+                                <dd> &lt; dd > Verdura color verde&lt;/dd></dd>
+                                <dt> &lt; dt > Lechuga &lt;/dt></dt>
+                                <dd> &lt; dd > Verdura color verde &lt;/dd></dt>
+                                <dt> &lt; dt > Cebolla &lt;/dt></dt>
+                                <dd> &lt; dd > Verdura color blanco por... &lt;/dd></dd>
+                                </dt>
+                                &lt; /dl >
+                            </dl>
+                        </div>
+                        <div>
+                            <em>Resultado:</em>
+                            <br>
+                            <dl>
+                                <dt> Pepino </dt>
+                                <dd> Verdura color verde...</dd>
+                                <dt> Calabaza </dt>
+                                <dd> Verdura color naranja...</dd>
+                                <dt> Cebolla </dt>
+                                <dd> Verdura color blanco...</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="lines"></div>
+                    <h2> 2. Tablas </h2>
+                    <p>Como muchas otras estructuras de HTML, las tablas son construidas utilizando elementos.
+                        En
+                        particular,
+                        una tabla básica puede ser declarada usando tres elementos, a saber, table (el
+                        contenedor
+                        principal), tr
+                        (representando a las filas contenedoras de las celdas) y td (representando a las
+                        celdas).
+                        Ejemplo:
+                    </p>
+                    <div class="ej">
+                        <div>
+                            <em> Ejemplo:</em>
+                            &lt;table><br>
+                            &emsp; &lt;tr><br>
+                            &emsp;&emsp;&lt;td> texto 1 &lt;/td><br>
+                            &emsp;&emsp;&lt;td> texto 2 &lt;/td><br>
+                            &emsp;&emsp;&lt;td> texto 3 &lt;/td><br>
+                            &emsp;&emsp;&lt;td> texto 4 &lt;/td><br>
+                            &emsp;&lt;/tr><br>
+                            &emsp;&lt;tr><br>
+                            &emsp;&emsp;&lt;td> texto 1 &lt;/td><br>
+                            &emsp;&emsp;&lt;td> texto 2 &lt;/td><br>
+                            &emsp;&emsp;&lt;td> texto 3 &lt;/td><br>
+                            &emsp;&emsp;&lt;td> texto 4 &lt;/td><br>
+                            &emsp;&lt;/tr><br>
+                            &lt;/table>
+
+                        </div>
+                        <div>
+                            <em> Ejemplo:</em><br><br>
+                            <table>
+                                <tr>
+                                    <td>Año 1</td>
+                                    <td>Año 2</td>
+                                    <td>Año 3</td>
+                                    <td>Año 4</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>50</td>
+                                    <td>75</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>100</td>
+                                    <td>50</td>
+                                    <td>200</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>150</td>
+                                    <td>200</td>
+                                    <td>500</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">Total=1500</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="lines"></div>
+                    <h2> 3. Formularios </h2>
+                    <p>El HTML de un formulario web está compuesto por uno o más controles de formulario (a veces
+                        llamados widgets), además de algunos elementos adicionales que ayudan a estructurar el
+                        formulario general; a menudo se los conoce como formularios HTML. Los controles pueden ser
+                        campos de texto de una o varias líneas, cajas desplegables, botones, casillas de verificación o
+                        botones de opción, y se crean principalmente con el elemento &lt;input>, aunque hay algunos
+                        otros
+                        elementos que también hay que conocer.
+                    </p>
+                    <div class="ej">
+                        <img
+                            src="http://agrega.juntadeandalucia.es/repositorio/18062018/43/es-an_2018061812_9095923/formulario.JPG">
+
+                    </div>
+                </article>
+                </ol>
+            </section>
+
+            <aside>
+                <h3> Material Recomendable</h3>
+                <div>
+                    <a href="https://www.genbeta.com/desarrollo/10-cosas-de-javascript-que-seguramente-no-sabias-y-te-sorprenderan"
+                        target="_blank"><span>¿Sabías que...?</span></a><br>
+                    <a href="https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/" title="AtajosCode"
+                        target="_blank"><span>Atajos del Code</span></a>
+                    <a href="https://www.youtube.com/watch?v=L6Egy1hJlHA" title="10 Consejos"><span>Consejos</span></a>
+                    <p></p>
+                </div>
+                <div class="aside-img">
+                    <p><em>Para buscar iconos Link:</em></p>
+                    <a href="https://www.flaticon.es/" target="_blank">
+                        <img src="https://cdn-share-sprites.flaticon.com/author/1-freepik_facebook.jpg"
+                            title="flaticon"> </a>
+                </div>
+                <div class="aside-img">
+                    <p><em>Te confundes con los colores:</em></p>
+                    <a href="https://coolors.co/" target="_blank">
+                        <img src="https://htmlcolorcodes.com/assets/images/resource-color-palette-generators/html-color-codes-color-palette-generators-coolors.jpg"
+                            title="Coolors">
+                    </a>
+                </div>
+                <div class="aside-img">
+                    <p><em>Estilos de letras:</em></p>
+                    <a href="https://fonts.google.com/?query=space+mono" target="_blank">
+                        <img src="https://www.creaxid.com.mx/blog/wp-content/uploads/2017/05/Google-fonts.png" ;
+                            title="@fonts.google">
+                    </a>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <!-- Contiene todos los iconos de redes sociales -->
+            <div class="iconsFooter">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img
+                        src="https://i7.pngflow.com/pngimage/945/494/png-facebook-logo-computer-icons-social-media-facebook-youtube-social-network-social-media-logo-internet-linkedin-area-clipart.png">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjR1m5fLYYQzDATjdp9pQPg0hxkm6fpco82x7MndpDN8k77zzl0Sv2KPSF19vSTM-EebU&usqp=CAU">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="https://www.seekpng.com/png/detail/508-5088221_i-icono-instagram-blanco-y-negro.png">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img
+                        src="https://w7.pngwing.com/pngs/261/478/png-transparent-youtube-computer-icons-logo-youtube-angle-logo-black.png">
+                </a>
+            </div>
+            <div class="copyright">
+                <p>Copyright</p>
+                <p>Tlf: 555-444-777</p>
+                <a href="">
+                    <p>Email: nole@.com</p>
+                </a>
+                <a href="https://www.google.es/maps/@-67.430779,-67.8907863,6.53z">
+                    <p> Calle de github, nº 13, 28000,
+                        Madrid</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

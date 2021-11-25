@@ -1,0 +1,265 @@
+/*Import font-family Mistery Wuest*/
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+
+/*Selector para la imagen de las etiquetas de la bibiografia*/
+#imgtags img{
+    width: 70%;
+    height: 50%;
+}
+/*Posiciona el icono den el titulo a su lado derecho*/
+#titulo {
+    float: left;
+}
+/*Selector etiqueta estilos del article*/
+article {
+    font-family: 'Voltaire', sans-serif;
+    line-height: 25px;
+    padding: 0% 5%;
+}
+
+/*Estilos al aside */
+aside {
+    background-color: #8281C2;
+    font-family: 'Voltaire', sans-serif;
+    height: 100vh;
+    margin: 0;
+    position: sticky;
+    top: 40px;
+    text-align: center;
+    width: 20%;
+
+}
+
+/* Color al titulo del aside*/
+aside h3 {
+    color: white;
+    text-shadow: none;
+}
+
+/*Selector etiqueta: Botones de navegación*/
+button {
+    font-family: 'Voltaire', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 5px;
+}
+
+/*Pseudo-clase cambia el color al pasar*/
+button:hover {
+    background-color: #bfe6f1;
+    color: black;
+}
+
+/*Pseudo-clase cambia color al activar*/
+button:active {
+    background-color: black;
+    color: white;
+}
+
+/* Selector etiqueta: Para la página entera */
+html {
+    background-image: url('https://static8.depositphotos.com/1154062/1071/v/950/depositphotos_10712741-stock-illustration-white-crumpled-abstract-background.jpg');
+    color: white;
+}
+
+/*Selector etiqueta:*/
+footer {   
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 25px 25px;
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    justify-content: space-around;   
+    padding: 10px 0px 5px 15px;
+}
+
+/*Tamaño de los iconos del footer*/
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+/*Selector etiqueta:*/
+form {
+    width: 70%;
+}
+
+/*Selector etiqueta para los videos youtubes del portfolio*/
+iframe {
+    width: 180px;
+    height: 120px;
+}
+
+/*Selector etiqueta: del formulario (se podria cambiar o quitar)*/
+legend {
+    border: 1px solid grey;
+}
+
+/*Pongo display para main y nav lu*/
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Selector para que pase el nav por delante del stick aside*/
+nav {
+    z-index: 9;
+}
+
+/*Selector para dar estilo al nav*/
+nav, .button-nav {
+    background-color: #122C34;
+    border-bottom: 1px solid white;
+    height: 40px;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+}
+
+/*Elimino los margenes del nav*/
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+td, tr {
+    border: 1px solid white;
+}
+
+/*Selector etiqueta:*/
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+/*Selector etiqueta:*/
+section {
+    text-align: justify;
+    margin-bottom: 20px;
+    width: 68%;
+}
+
+/*Selector etiqueta: Elimina los estilos de la lista*/
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+
+}
+
+/*Selector clase:*/
+.bolt {
+    font-weight: bold;
+}
+
+/*Selector clase para la multimedia del aside*/
+.aside-img {
+    color: black;
+}
+
+/*Selector clase para el tamaño, border*/
+.aside-img img {
+    border: 1px solid black;
+    width: 70%;
+}
+
+/*Selector clase: Da estilos a los botones del navegador*/
+.button-nav {
+    border: none;
+    color: white;
+    width: auto;
+}
+
+/*Selector clase:*/
+.container {
+    background-color: #114d5f;
+    border-radius: 30px;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 80%;
+}
+.copyright{
+    font-size: 0.9em;
+    display: flex;
+    gap: 25px;
+}
+/*Selector dar color al enlace del footer*/
+.copyright>a{
+    text-decoration:none;
+    color:white;
+}
+.copyright>a:hover{
+    color:yellow;
+}
+
+/*Selector clase centra los ejemplos*/
+.ej {
+    align-content: center;
+    background-color: rgba(8, 8, 8, 0.411);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    width: 80%;
+}
+
+/*Selector para el ancho de los ejemplos de la biografia*/
+.ej img {
+    width: 100%;
+}
+
+/*Selector par colocar los iconos del footer*/
+.iconsFooter {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
+.iconsFooter>a:hover{
+    filter: blur(2px);
+}
+
+/*Selector clase: icono del titulo de html*/
+.icon-title {
+    width: 10%;
+    height: 10%;
+}
+
+/*Creo las líneas de separación de los temarios (no me gusta)*/
+.lines {
+    border: 1px solid white;
+}
+
+/*Selector clase:* Restablece el estilo de lista*/
+.list-disorder {
+    list-style: initial;
+}
+
+/*Selector clase: Diseña*/
+.title-center {
+    background-color: black;
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    justify-content: center;
+    text-shadow: #468fa5 5px 5px 3px;
+    height: 70px;
+}
+
+.videoTutorial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: 100px;
+  grid-gap: 20px;
+  */
+}
+
+/* Selector etiqueta: */
+.videoTutorial h4 {
+    color: black;
+    font-size: 1.2em;
+}
